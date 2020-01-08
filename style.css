@@ -9,17 +9,24 @@ h1 {
   text-align: center;
   font-family: 'Kaushan Script', cursive;
   font-size: 4rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 h3 {
   color: #48ACF0;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.4rem;
+  margin-bottom: -15px;
+}
+
+h4 {
+  color: #48ACF0;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 a {
-  color: #FFFD98;
+  color: #48ACF0;
   text-decoration: none;
 }
 
@@ -28,35 +35,35 @@ nav {
 }
 
 nav ul {
-  margin: 0;
+  margin: 0px;
   overflow: hidden;
   background-color: #FF7E6B;
   font-family: 'Patua One', cursive; 
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient(-50deg, #ffb6bb, #68008C, #2FE5FF)
 }
 
 li {
   display: inline-block;
-  float: auto;
   font-size: 2rem;
   text-align: center;
   font-weight: bolder;
-  display: inline-block;
   font-style: italic;
   /* Skew the box */
   transform: skew(-20deg);
-  padding: 15px;
+  padding: 25px;
+  width: 250px;
 }
 
 li a {
 padding: 10px;
 background-color: #FFF7F8;
 text-decoration:none;
-padding: 10px;
-padding-left: 35px;
-padding-right: 35px;
 display: block;
+margin: auto;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 li a span {
@@ -67,18 +74,22 @@ li a span {
 }
 
 p {
-  padding-left: 30px;
-  padding-right: 30px;
   color: #FF7E6B;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 div {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
 img {
+  margin: 20px;
+}
+
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +99,6 @@ img {
 
 .selected, .selected:hover {
   background-color: #C2E812;
-
 }
 
 .selectedtext {
@@ -98,9 +108,38 @@ img {
 li a:hover{
     background-color: #FF7E6B;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    /* background-image: linear-gradient(-50deg, #2FE5FF, #68008C, #ffb6bb) */
 }
 
 li a:hover span {
   color: #FFF7F8;
+}
+
+.icon {
+  width: 150px;
+}
+
+.playlists2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.playlist2 {
+  text-align: center;
+  width: 400px;
+  
+  word-wrap: break-word;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-top: 500px;
 }
